@@ -1,0 +1,28 @@
+.product-container{
+  padding-bottom: 50px;
+}
+
+.product-cards{
+  margin-bottom: 50px;
+}
+
+.product-card-img{
+  width: 300px;
+  height: 250px;
+}
+
+.details-btn{
+  margin-top: 50px;
+}
+
+.filter-nav-tab{
+  margin-bottom: 30px;
+}
+
+.recommended_img_banner{
+  width: 100%;
+}
+
+.card-title{
+  font-size: 15px;
+}
