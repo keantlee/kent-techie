@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+/**
+ *  Index page
+ */
+Route::get('/home', [ProductController::class,'index'])->name('home');
+
+/**
+ * Categories
+ */
+Route::get('/product/dekstop', [ProductController::class,'desktop'])->name('desktop');
+Route::get('/product/laptop', [ProductController::class,'laptop'])->name('laptop');
+Route::get('/product/console', [ProductController::class,'console'])->name('console');
+Route::get('/product/game', [ProductController::class,'game'])->name('game');
